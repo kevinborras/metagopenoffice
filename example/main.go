@@ -27,7 +27,7 @@ import (
 
 func main() {
 
-	file, err := os.Open("../test/ods_sample.ods")
+	file, err := os.Open("../test/test.odt")
 	if err != nil {
 		log.Fatal(err)
 	}

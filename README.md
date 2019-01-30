@@ -27,7 +27,7 @@ import (
 
 func main() {
 
-	file, err := os.Open("ods_sample.ods")
+	file, err := os.Open("../test/test.odt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -64,24 +64,24 @@ func main() {
 Output
 
 ```bash
-Generator:  MicrosoftOffice/14.0 MicrosoftExcel/CalculationVersion-9303
-InitialCreator:
-CreationDate:  2008-01-04T03:08:19Z
-Creator:
-Date:  2012-07-04T03:25:20Z
-Language:
-EditingCycles:
-EditingDuration:
-Title:  Welcome to File Extension FYI Center!
+Generator:  StarOffice/8_Beta$Linux OpenOffice.org_project/680m66$Build-8852$CWS-sdksample
+InitialCreator:  Jürgen Schmidt
+CreationDate:  2002-12-18T12:28:35
+Creator:  Jürgen Schmidt
+Date:  2002-12-18T12:31:15
+Language:  en-US
+EditingCycles:  3
+EditingDuration:  PT2M40S
+Title:
 Description:
 Subject:
 PrintDate:
 Keyword:
 
-PageCount:  0
+PageCount:  1
 ImageCount:  0
 ObjectCount:  0
-ParagraphCount:  0
-WordCount:  0
-CharCount:  0
+ParagraphCount:  7
+WordCount:  77
+CharCount:  511
 ```
