@@ -100,7 +100,7 @@ func TestODTDocumment(t *testing.T) {
 		log.Fatal(err)
 	}
 	if !reflect.DeepEqual(odtExpectedResult, actualResult) {
-		t.Fatal("Not passing")
+		t.Fatalf("Expected %v but got %v", odtExpectedResult, actualResult)
 	}
 }
 
@@ -115,7 +115,7 @@ func TestODSDocumment(t *testing.T) {
 		log.Fatal(err)
 	}
 	if !reflect.DeepEqual(odsExpectedResult, actualResult) {
-		t.Fatalf("Not passing")
+		t.Fatalf("Expected %v but got %v", odsExpectedResult, actualResult)
 	}
 }
 
@@ -130,6 +130,6 @@ func TestODPDocumment(t *testing.T) {
 		log.Fatal(err)
 	}
 	if !reflect.DeepEqual(odpExpectedResult, actualResult) {
-		t.Fatal("Not passing")
+		t.Fatalf("Expected %v but got %v", odpExpectedResult, actualResult)
 	}
 }
