@@ -45,6 +45,11 @@ func main() {
 	fmt.Println("Language: ", content.Meta.Language)
 	fmt.Println("EditingCycles: ", content.Meta.EditingCycles)
 	fmt.Println("EditingDuration: ", content.Meta.EditingDuration)
+	fmt.Println("Title: ", content.Meta.Title)
+	fmt.Println("Description: ", content.Meta.Description)
+	fmt.Println("Subject: ", content.Meta.Subject)
+	fmt.Println("PrintDate: ", content.Meta.PrintDate)
+	fmt.Println("Keyword: ", content.Meta.Keyword)
 	fmt.Println()
 	fmt.Println("PageCount: ", content.Meta.Stats.PageCount)
 	fmt.Println("ImageCount: ", content.Meta.Stats.ImageCount)
@@ -59,19 +64,24 @@ func main() {
 Output
 
 ```bash
-Generator:  StarOffice/8_Beta$Linux OpenOffice.org_project/680m66$Build-8852$CWS-sdksample
-InitialCreator:  Jürgen Schmidt
-CreationDate:  2002-12-18T12:28:35
-Creator:  Jürgen Schmidt
-Date:  2002-12-18T12:31:15
-Language:  en-US
-EditingCycles:  3
-EditingDuration:  PT2M40S
+Generator:  MicrosoftOffice/14.0 MicrosoftExcel/CalculationVersion-9303
+InitialCreator:
+CreationDate:  2008-01-04T03:08:19Z
+Creator:
+Date:  2012-07-04T03:25:20Z
+Language:
+EditingCycles:
+EditingDuration:
+Title:  Welcome to File Extension FYI Center!
+Description:
+Subject:
+PrintDate:
+Keyword:
 
-PageCount:  1
+PageCount:  0
 ImageCount:  0
 ObjectCount:  0
-ParagraphCount:  7
-WordCount:  77
-CharCount:  511
+ParagraphCount:  0
+WordCount:  0
+CharCount:  0
 ```

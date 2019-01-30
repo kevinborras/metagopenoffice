@@ -27,7 +27,7 @@ import (
 
 func main() {
 
-	file, err := os.Open("UOML Sample.odt")
+	file, err := os.Open("../test/ods_sample.ods")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,6 +45,11 @@ func main() {
 	fmt.Println("Language: ", content.Meta.Language)
 	fmt.Println("EditingCycles: ", content.Meta.EditingCycles)
 	fmt.Println("EditingDuration: ", content.Meta.EditingDuration)
+	fmt.Println("Title: ", content.Meta.Title)
+	fmt.Println("Description: ", content.Meta.Description)
+	fmt.Println("Subject: ", content.Meta.Subject)
+	fmt.Println("PrintDate: ", content.Meta.PrintDate)
+	fmt.Println("Keyword: ", content.Meta.Keyword)
 	fmt.Println()
 	fmt.Println("PageCount: ", content.Meta.Stats.PageCount)
 	fmt.Println("ImageCount: ", content.Meta.Stats.ImageCount)

@@ -39,6 +39,11 @@ type Statistics struct {
 //Metadata is a struct that contains metadata fields
 type Metadata struct {
 	Generator       string     `xml:"generator"`
+	Title           string     `xml:"title"`
+	Description     string     `xml:"description"`
+	Subject         string     `xml:"subject"`
+	PrintDate       string     `xml:"print-date"`
+	Keyword         string     `xml:"keyword"`
 	InitialCreator  string     `xml:"initial-creator"`
 	CreationDate    string     `xml:"creation-date"`
 	Creator         string     `xml:"creator"`
