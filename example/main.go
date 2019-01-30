@@ -1,20 +1,20 @@
-# metagopenoffice
+/*
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+   http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+*/
 
-[![Travis build](https://travis-ci.com/kevinborras/metagopenoffice.svg?branch=master)](https://travis-ci.com/kevinborras/metagopenoffice)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kevinborras/metagopenoffice)](https://goreportcard.com/badge/github.com/kevinborras/metagopenoffice)
-
-Open Office metadata extractor written in Go
-
-The main features of metagopenoffice are:
-
-* Read metadata of odt files.
-* Read metadata of odp files.
-* Read metadata of ods files.
-
-## How to use ?
----
-
-```golang
 package main
 
 import (
@@ -27,12 +27,12 @@ import (
 
 func main() {
 
-	file, err := os.Open("ods_sample.ods")
+	file, err := os.Open("UOML Sample.odt")
 	if err != nil {
 		log.Fatal(err)
 	}
 	file.Close()
-	content, err := gopenoffice.GetMetada(file)
+	content, err := metagopenoffice.GetMetada(file)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -54,24 +54,3 @@ func main() {
 	fmt.Println("CharCount: ", content.Meta.Stats.CharCount)
 
 }
-```
-
-Output
-
-```bash
-Generator:  StarOffice/8_Beta$Linux OpenOffice.org_project/680m66$Build-8852$CWS-sdksample
-InitialCreator:  Jürgen Schmidt
-CreationDate:  2002-12-18T12:28:35
-Creator:  Jürgen Schmidt
-Date:  2002-12-18T12:31:15
-Language:  en-US
-EditingCycles:  3
-EditingDuration:  PT2M40S
-
-PageCount:  1
-ImageCount:  0
-ObjectCount:  0
-ParagraphCount:  7
-WordCount:  77
-CharCount:  511
-```
