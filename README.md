@@ -1,6 +1,7 @@
 # metagopenoffice
 
 [![Travis build](https://travis-ci.com/kevinborras/metagopenoffice.svg?branch=master)](https://travis-ci.com/kevinborras/metagopenoffice)
+
 [![Go Report Card](https://goreportcard.com/badge/github.com/kevinborras/metagopenoffice)](https://goreportcard.com/badge/github.com/kevinborras/metagopenoffice)
 
 Open Office metadata extractor written in Go
