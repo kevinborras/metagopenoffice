@@ -62,7 +62,7 @@ var odsExpectedResult = metagopenoffice.OpenOfficeXML{
 		Language:        "",
 		EditingCycles:   "",
 		EditingDuration: "",
-		Title:           " Welcome to File Extension FYI Center!",
+		Title:           "Welcome to File Extension FYI Center!",
 		Description:     "",
 		Subject:         "",
 		PrintDate:       "",
